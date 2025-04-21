@@ -44,7 +44,7 @@ src/
 │ ├── solutions.html    # Page "Solutions"
 │ └── apropos.html      # Page "À propos"
 ├── js/
-│ ├── dark-mode.js      # Script pour le mode sombre
+│ ├── common.js         # Script communs à toutes les pages
 │ └── slider.js         # Script pour le slider
 ```
 
