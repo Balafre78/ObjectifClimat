@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objectif climat ! - À propos</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <!--stdclasse should always be the last css to load-->
+    <link rel="stylesheet" href="../css/stdclasse.css">
     <script src="../js/dark-mode.js" defer></script>
+    <script src="../js/menu.js" defer></script>
 </head>
 <body>
-<header>
-    <div class="logo">
+<div id="full-menu" class="stick over-Z top">
+    <div id="menu-fullscreen" class="stick left">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="comprendre.html">Comprendre</a></li>
+            <li><a href="consequences.html">Conséquences</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><label onclick="toggleMenu()"> &#11165; Click to reduce </label></li>
+        </ul>
+    </div>
+    <div id="menu-fs-decoration-right" class="logo stick right">
         <h1>Objectif climat !</h1>
     </div>
-    <nav class="nav">
+</div>
+
+<section class="logo head">
+    <h1>Objectif climat !</h1>
+</section>
+
+<header class="head stick top">
+    <nav id="menu" class="nav">
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="comprendre.html">Comprendre</a></li>
@@ -45,7 +67,7 @@
     </section>
 </main>
 
-<footer>
+<footer class="relative bottom">
     <p>&copy; 2025 Objectif climat ! Tous droits réservés. <a href="apropos.html">À propos</a></p>
 </footer>
 </body>

@@ -1,0 +1,32 @@
+.stick {
+    position: sticky;
+}
+
+.relative {
+    position: relative;
+}
+
+.top {
+    top: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+
+.always-ontop {
+    z-index: 99999999;
+}
+
+.over-Z {
+    z-index: 999;
+}
