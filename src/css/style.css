@@ -1,0 +1,156 @@
+[theme="light"] {
+    --white-bg-color: #ececec;
+    --white-bg-color-hover: #cccccc;
+    --green-bg-color: #2e8b57;
+    --dark-green-bg-color: #2f6245;
+    --black-text-color: #212121;
+    --white-text-color: #ececec;
+    --ter-text-color: #2e8b57;
+
+    --button-bg-color: #212121;
+}
+
+[theme="dark"] {
+    --white-bg-color: #212121;
+    --white-bg-color-hover: #494949;
+    --green-bg-color: #2e8b57;
+    --dark-green-bg-color: #2f6245;
+    --black-text-color: #ececec;
+    --white-text-color: #ececec;
+    --ter-text-color: #2e8b57;
+
+    --button-bg-color: #ececec;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.button {
+    border: none;
+    background: var(--button-bg-color);
+    border-radius: 8px;
+    font-size: large;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-color: var(--white-bg-color);
+    color: var(--black-text-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green-bg-color);
+    color: var(--white-text-color);
+    text-align: center;
+}
+
+header .logo {
+    background-color: var(--dark-green-bg-color);
+    font-size: large;
+    font-weight: bold;
+    padding: 16px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#slider1 {
+    margin: 20px;
+    height: 70%;
+}
+
+#slider1 .slide-img {
+    border-radius: 8px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin: 2%;
+}
+
+.card {
+    background-color: var(--white-bg-color);
+    padding: 2%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.card:hover {
+    background-color: var(--white-bg-color-hover);
+}
+
+.card h3 a {
+    color: var(--ter-text-color);
+    text-decoration: none;
+}
+
+#theme-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--dark-green-bg-color);
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    padding: 16px;
+}
+
+footer a {
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .cards {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

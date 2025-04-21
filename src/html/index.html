@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectif climat ! - Accueil</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <script src="../js/dark-mode.js" defer></script>
+    <script src="../js/slider.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Objectif climat !</h1>
+    </div>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="comprendre.html">Comprendre</a></li>
+            <li><a href="consequences.html">Conséquences</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="intro">
+        <h2>Bienvenue sur notre site dédié à la lutte contre le changement climatique</h2>
+        <p>Découvrez les causes, les conséquences et surtout comment agir à votre échelle.</p>
+    </section>
+
+    <section class="slides-container" id="slider1">
+        <div class="slide fade">
+            <div class="slide-number">1 / 3</div>
+            <img class="slide-img" src="../assets/images/img1.jpg" alt="">
+            <div class="slide-title">Description 1</div>
+        </div>
+        <div class="slide fade">
+            <div class="slide-number">2 / 3</div>
+            <img class="slide-img" src="../assets/images/img2.jpg" alt="">
+            <div class="slide-title">Description 2</div>
+        </div>
+        <div class="slide fade">
+            <div class="slide-number">3 / 3</div>
+            <img class="slide-img" src="../assets/images/img3.jpg" alt="">
+            <div class="slide-title">Description 3</div>
+        </div>
+
+        <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+        <a class="next" onclick="nextSlide(1)">&#10095;</a>
+    </section>
+
+    <section class="cards">
+        <a href="comprendre.html" class="card">
+            <h3>Comprendre</h3>
+            <p>Les origines et les effets du changement climatique.</p>
+        </a>
+        <a href="solutions.html" class="card">
+            <h3>Agir</h3>
+            <p>Des gestes simples pour un grand impact.</p>
+        </a>
+        <a href="solutions.html" class="card">
+            <h3>Agir</h3>
+            <p>Des gestes simples pour un grand impact.</p>
+        </a>
+        <a href="solutions.html" class="card">
+            <h3>Agir</h3>
+            <p>Des gestes simples pour un grand impact.</p>
+        </a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Objectif climat ! Tous droits réservés. <a href="apropos.html">À propos</a></p>
+</footer>
+</body>
+</html>
