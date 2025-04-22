@@ -33,16 +33,16 @@ src/
 ├── assets/
 │ ├── fonts/            # Polices utilisées
 │ ├── videos/           # Vidéos utilisées
-│ └── imgages/              # Images utilisées
+│ └── imgages/          # Images utilisées
 ├── css/
 │ ├── style.css         # Styles principaux
 │ ├── slider.css        # Styles pour le slider
 ├── html/
-│ ├── index.html        # Page d'accueil
+│ ├── index.html        # Page d'Accueil
 │ ├── comprendre.html   # Page Comprendre
-│ ├── consequences.html # Page Conséquences"
-│ ├── solutions.html    # Page "Solutions"
-│ └── apropos.html      # Page "À propos"
+│ ├── consequences.html # Page Conséquences
+│ ├── solutions.html    # Page Solutions
+│ └── apropos.html      # Page À propos
 ├── js/
 │ ├── common.js         # Script communs à toutes les pages
 │ └── slider.js         # Script pour le slider

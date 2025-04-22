@@ -1,6 +1,6 @@
 .slides-container {
     position: relative;
-    border: dashed red;
+    border: dashed red 1px;
     margin: 0;
 }
 
@@ -43,7 +43,6 @@
     color: var(--white-text-color);
     mix-blend-mode: difference;
     font-size: 15px;
-    padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;

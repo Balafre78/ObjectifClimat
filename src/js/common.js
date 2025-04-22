@@ -10,6 +10,10 @@ function toggleDarkMode() {
     localStorage.setItem("theme", newTheme);
 }
 
+function backToTop() {
+    window.scrollTo({top: 0, behavior: "smooth"});
+}
+
 /*
  * Lorsque le bouton est de menu déroulant est cliqué,
  * on ajoute/supprime la class responsive à la nav-bar.
@@ -25,8 +29,8 @@ function responsiveHeaderNav() {
     }
 }
 
-/* Ajoute le bouton pour changer de switch le thème sur toutes les pages qui importent le script */
 document.addEventListener('DOMContentLoaded', () => {
+    /* Ajoute le bouton pour changer de switch le thème sur toutes les pages qui importent le script */
     const btn = document.createElement('button');
     btn.textContent = '🌙';
     btn.id = "theme-button";
