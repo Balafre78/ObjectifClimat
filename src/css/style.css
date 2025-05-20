@@ -123,7 +123,7 @@ header .logo {
     display: none;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 660px) {
     .nav-bar a:not(:first-child) { /* Laisse l'accueil */
         display: none;
     }
@@ -226,7 +226,7 @@ footer a {
     color: white;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 660px) {
     .cards {
         flex-direction: row;
         justify-content: space-around;
