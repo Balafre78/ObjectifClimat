@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectif climat ! - À propos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/calculateur.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1>Objectif climat !</h1>
+    </div>
+    <nav class="nav-bar" id="header-nav">
+        <a href="index.html">Accueil</a>
+        <a href="comprendre.html">Comprendre</a>
+        <a href="consequences.html">Conséquences</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="calculateur.html" class="active">Calculateur</a>
+        <a href="apropos.html">À propos</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveHeaderNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+</header>
+
+<main>
+    <form id="carbon-form">
+        <!-- Catégorie 1 -->
+        <div class="category block" id="category-1">
+            <div class="actions">
+                <div class="icon">
+                    <i class="fa fa-car"></i>
+                </div>
+                <div class="buttons">
+                    <button type="button" disabled>Précédent</button>
+                    <button type="button" onclick="nextCategory(1)">Suivant</button>
+                </div>
+            </div>
+            <div class="content">
+                <h2>Transport</h2>
+                <label for="car-km">Kilomètres parcourus en voiture par semaine :</label>
+                <input type="number" id="car-km" name="car-km" min="0" required>
+                <label for="public-transport">Utilisation des transports en commun (heures/semaine) :</label>
+                <input type="number" id="public-transport" name="public-transport" min="0" required>
+                <label for="car-da">Kilomètres parcourus en voiture par semaine :</label>
+                <input type="number" id="car-da" name="car-km" min="0" required>
+                <label for="public-transport-da">Utilisation des transports en commun (heures/semaine) :</label>
+                <input type="number" id="public-transport-da" name="public-transport" min="0" required>
+            </div>
+        </div>
+
+        <!-- Catégorie 2 -->
+        <div class="category block" id="category-2" style="display: none;">
+            <i class="fa-solid fa-car"></i>
+            <h2>Habitation</h2>
+            <label for="electricity">Consommation d'électricité (kWh/mois) :</label>
+            <input type="number" id="electricity" name="electricity" min="0" required>
+            <label for="heating">Type de chauffage :</label>
+            <select id="heating" name="heating" required>
+                <option value="gaz">Gaz</option>
+                <option value="électrique">Électrique</option>
+                <option value="bois">Bois</option>
+            </select>
+            <button type="button" onclick="prevCategory(2)">Précédent</button>
+            <button type="button" onclick="nextCategory(2)">Suivant</button>
+        </div>
+
+        <!-- Catégorie 3 -->
+        <div class="category block" id="category-3" style="display: none;">
+            <h2>Alimentation</h2>
+            <label for="meat">Consommation de viande (repas/semaine) :</label>
+            <input type="number" id="meat" name="meat" min="0" required>
+            <label for="local-food">Consommation de produits locaux (%) :</label>
+            <input type="number" id="local-food" name="local-food" min="0" max="100" required>
+            <button type="button" onclick="prevCategory(3)">Précédent</button>
+            <button type="button" onclick="calculateCarbon()">Calculer</button>
+        </div>
+    </form>
+
+    <div id="result" style="display: none;">
+        <h2>Résultat</h2>
+        <p id="carbon-result"></p>
+        <button onclick="restart()">Recommencer</button>
+    </div>
+</main>
+
+<footer class="relative bottom">
+    <p>&copy; 2025 Objectif climat ! Tous droits réservés. <a href="apropos.html">À propos</a></p>
+</footer>
+</body>
+</html>

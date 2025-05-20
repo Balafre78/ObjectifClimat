@@ -1,25 +1,27 @@
 [theme="light"] {
     --white-bg-color: #ececec;
-    --white-bg-color-hover: #cccccc;
+    --gray-bg-color: #cccccc;
+    --dark-gray-bg-color: #999999;
     --green-bg-color: #2e8b57;
     --dark-green-bg-color: #2f6245;
     --black-text-color: #212121;
     --white-text-color: #ececec;
     --ter-text-color: #2e8b57;
 
-    --button-bg-color: #212121;
+    --button-bg-color: #282828;
 }
 
 [theme="dark"] {
     --white-bg-color: #212121;
-    --white-bg-color-hover: #494949;
+    --gray-bg-color: #2c2c2c;
+    --dark-gray-bg-color: #3b3b3b;
     --green-bg-color: #2e8b57;
     --dark-green-bg-color: #2f6245;
     --black-text-color: #ececec;
-    --white-text-color: #ececec;
+    --white-text-color: #212121;
     --ter-text-color: #2e8b57;
 
-    --button-bg-color: #ececec;
+    --button-bg-color: #e0e0e0;
 }
 
 * {
@@ -34,11 +36,58 @@ a {
     text-decoration: none;
 }
 
+.block {
+    margin: 10px;
+    background-color: var(--gray-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.full-width {
+    width: 90%;
+}
+
+.author {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.author-img {
+    min-width: 100px;
+    min-height: 100px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 2px solid var(--dark-green-bg-color, #2e7d32);
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.author-desc {
+    margin: 0;
+    font-size: 1em;
+}
+
 header {
     display: flex;
     flex-direction: column;
     background-color: var(--dark-green-bg-color);
-    color: var(--white-text-color);
+    color: white;
     text-align: center;
 }
 
@@ -55,7 +104,7 @@ header .logo {
 .nav-bar a {
     float: left;
     display: block;
-    color: var(--white-text-color);
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -143,15 +192,11 @@ main {
 }
 
 .card {
-    background-color: var(--white-bg-color);
-    padding: 2%;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1;
+
 }
 
 .card:hover {
-    background-color: var(--white-bg-color-hover);
+    background-color: var(--dark-gray-bg-color);
 }
 
 .card h3 a {
@@ -163,8 +208,8 @@ main {
     position: fixed;
     bottom: 1vw;
     right: 1vw;
-    width: 5vh;
-    height: 5vh;
+    width: 50px;
+    height: 50px;
     padding: 10px;
 }
 
