@@ -1,5 +1,6 @@
 [theme="light"] {
     --white-bg-color: #ececec;
+    --glassy: rgba(255, 255, 255, 0.40);
     --gray-bg-color: #cccccc;
     --dark-gray-bg-color: #999999;
     --green-bg-color: #2e8b57;
@@ -13,6 +14,7 @@
 
 [theme="dark"] {
     --white-bg-color: #212121;
+    --glassy: rgba(50, 50, 50, 0.60);
     --gray-bg-color: #2c2c2c;
     --dark-gray-bg-color: #3b3b3b;
     --green-bg-color: #2e8b57;
@@ -38,49 +40,17 @@ a {
 
 .block {
     margin: 10px;
-    background-color: var(--gray-bg-color);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1;
+    background: var(--glassy);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
 }
 
 .full-width {
     width: 90%;
-}
-
-.author {
-    text-align: left;
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    margin: 20px 0;
-}
-
-.author-img {
-    min-width: 100px;
-    min-height: 100px;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10%;
-    border: 2px solid var(--dark-green-bg-color, #2e7d32);
-}
-
-.author-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.author-name {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 4px;
-}
-
-.author-desc {
-    margin: 0;
-    font-size: 1em;
 }
 
 header {
@@ -123,7 +93,7 @@ header .logo {
     display: none;
 }
 
-@media(max-width: 660px) {
+@media(max-width: 700px) {
     .nav-bar a:not(:first-child) { /* Laisse l'accueil */
         display: none;
     }
@@ -163,6 +133,8 @@ body {
     min-height: 100vh;
     background-color: var(--white-bg-color);
     color: var(--black-text-color);
+    background-image: url("../assets/images/background.jpg");
+    backdrop-filter: blur(3rem);
 }
 
 main {

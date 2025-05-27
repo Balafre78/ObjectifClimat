@@ -1,38 +1,27 @@
 form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 form .category {
     margin: 0;
     padding: 2%;
     display: flex;
     flex-direction: row;
-    border: 1px dashed black;
 }
 
-form .category .actions {
+form .category .icon {
     display: flex;
     flex-direction: column;
     width: 20%;
     height: inherit;
     opacity: 0.5;
     margin-right: 2%;
-    border: 1px dashed deeppink;
-}
-
-form .category .actions .icon {
-    align-items: center;
-    font-size: 100px;
-    border: 1px dashed red;
-}
-
-form .category .actions .buttons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border: 1px dashed green;
-    height: 10%;
+    font-size: 100px;
 }
 
 form .category .content {
@@ -40,14 +29,78 @@ form .category .content {
     flex-direction: column;
     height: 100%;
     width: 78%;
-    border: 1px dashed blue;
     align-items: flex-start;
 }
 
-form button {
+form .category .content .question {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
     width: 100%;
-    height: 100%;
+}
+
+form .category .content .question label {
+    margin-bottom: 0.5em;
+}
+
+form .category .content .question input[type="number"],
+form .category .content .question select {
+    background-color: var(--glassy);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     border: none;
-    background-color: transparent;
+    color: var(--black-text-color);
+    width: 80%;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+form .category .content .question input[type="checkbox"],
+form .category .content .question input[type="radio"] {
+    background-color: var(--glassy);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: black;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+/* .category .content .question > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}*/
+
+form .buttons {
+    width: 100%;
+}
+
+form button {
     cursor: pointer;
+    width: 20%;
+}
+
+form button:disabled {
+    cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+    form .category .icon {
+        display: none;
+    }
+    form .category .content {
+        width: 100%;
+    }
+    form .category {
+        flex-direction: column;
+        align-items: center;
+    }
+    form .category .content .question input[type="number"],
+    form .category .content .question select {
+        width: 100%;
+    }
 }

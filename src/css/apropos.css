@@ -1,0 +1,39 @@
+.block {
+    width: 80%;
+    margin: 1rem;
+}
+
+
+.author {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.author-img {
+    min-width: 100px;
+    min-height: 100px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 2px solid var(--dark-green-bg-color, #2e7d32);
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.author-desc {
+    margin: 0;
+    font-size: 1em;
+}
