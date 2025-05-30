@@ -137,6 +137,12 @@ body {
     backdrop-filter: blur(3rem);
 }
 
+[theme="dark"] {
+    body {
+        backdrop-filter: blur(3rem) brightness(25%);
+    }
+}
+
 main {
     padding: 2rem;
     text-align: center;
@@ -152,26 +158,6 @@ main {
 
 #slider1 .slide-img {
     border-radius: 8px;
-}
-
-.cards {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.card {
-    width: 22%;
-    margin: 1%;
-}
-
-.card:hover {
-    background-color: var(--dark-gray-bg-color);
-}
-
-.card h3 a {
-    color: var(--ter-text-color);
-    text-decoration: none;
 }
 
 #theme-button {
@@ -194,15 +180,4 @@ footer {
 
 footer a {
     color: white;
-}
-
-@media (max-width: 600px) {
-    .cards {
-        border: 1px solid red;
-        flex-direction: column;
-        width: 100%;
-    }
-    .card {
-        width: 98%;
-    }
 }
