@@ -38,6 +38,12 @@ a {
     text-decoration: none;
 }
 
+[theme="dark"] {
+    body {
+        backdrop-filter: blur(3rem) brightness(75%);
+    }
+}
+
 .block {
     margin: 10px;
     padding: 20px;
@@ -55,8 +61,9 @@ a {
 
 header {
     display: flex;
-    flex-direction: column;
-    background-color: var(--dark-green-bg-color);
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(66, 66, 66, 0.5);
     color: white;
     text-align: center;
 }
@@ -66,30 +73,36 @@ header .logo {
     padding: 16px;
 }
 
-.nav-bar {
-    background-color: var(--green-bg-color);
+header .nav-bar {
     overflow: hidden;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    gap: 5px;
 }
 
-.nav-bar a {
+header .nav-bar a {
     float: left;
     display: block;
     color: white;
+    border-radius: 16px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
 }
 
-.nav-bar a:hover {
-    text-decoration: underline;
+header .nav-bar a:hover {
+        transform: scale(1.1);
 }
 
-.nav-bar a.active {
+header .nav-bar a.active {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.nav-bar .icon {
+header .nav-bar .icon {
     display: none;
 }
 
@@ -103,6 +116,8 @@ header .logo {
     }
     .nav-bar.responsive {
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
     .nav-bar.responsive a.icon {
         position: absolute;
@@ -113,16 +128,17 @@ header .logo {
         float: none;
         display: block;
         text-align: left;
+        width: 80%;
     }
 }
 
 .button {
     border: none;
-    background: var(--button-bg-color);
     border-radius: 8px;
     font-size: large;
     cursor: pointer;
 }
+
 
 body {
     margin: 0;
@@ -131,7 +147,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     min-height: 100vh;
-    background-color: var(--white-bg-color);
+    /*background-color: var(--white-bg-color);*/
     color: var(--black-text-color);
     background-image: url("../assets/images/background.jpg");
     backdrop-filter: blur(3rem);
@@ -170,7 +186,7 @@ main {
 }
 
 footer {
-    background-color: var(--dark-green-bg-color);
+    background-color: rgba(66, 66, 66, 0.5);
     color: white;
     text-align: center;
     margin-top: auto;
