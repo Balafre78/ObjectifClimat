@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = document.createElement('button');
     btn.textContent = '🌙';
     btn.id = "theme-button";
-    btn.className = "button";
+    btn.classList.add("button");
+    btn.classList.add("block");
     btn.addEventListener('click', toggleDarkMode);
     document.body.appendChild(btn);
 });

@@ -1,0 +1,16 @@
+.solutions-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 16px;
+}
+.solutions-table thead tr {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.solutions-table th {
+    padding: 12px;
+    text-align: left;
+}
+.solutions-table th, .solutions-table td {
+    padding: 8px;
+    text-align: left;
+}
