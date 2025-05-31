@@ -14,45 +14,54 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    position: relative;
+    /*position: relative;*/
     align-items: stretch;
 }
 
+.container-reversable-card {
+    /*position: relative;*/
+    width: 22.5%;
+    height: max(7rem, 15vh);
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    /*transition: transform 0.8s;*/
+    perspective: 1000px;  /*Remove this if you don't want the 3D effect */
+}
+
+.inner-reversable-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    /*transform-origin: center;*/
+
+}
+
+.container-reversable-card:hover .inner-reversable-card{
+    transform: rotateY(180deg);
+}
+
 .card {
+    width: 100%;
+    height: 100%;
     position: absolute;
     backface-visibility: hidden;
     background: var(--white-bg-color);
 }
 
 .card-front {
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
 
 }
 
 .card-back {
-    width: 100%;
-    height: 100%;
+    /*transform-origin: center;*/
     transform: rotateY(180deg);
-    backface-visibility: hidden;
 
-}
-
-.container-reversable-card {
-    position: relative;
-    width: 22%;
-    height: max(7rem, 15vh);
-    margin: 1%;
-    display: flex;
-    flex-direction: column;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-.container-reversable-card:hover {
-    transform: rotateY(180deg);
 }
 
 /*.card:hover {
