@@ -60,6 +60,10 @@ a {
 }
 
 header {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,7 +82,6 @@ header .nav-bar {
     padding: 5px;
     display: flex;
     flex-direction: row;
-    height: 30%;
     gap: 5px;
 }
 
@@ -88,14 +91,14 @@ header .nav-bar a {
     color: white;
     border-radius: 16px;
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px;
     text-decoration: none;
     font-size: 17px;
     transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
 }
 
 header .nav-bar a:hover {
-        transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 header .nav-bar a.active {
@@ -106,28 +109,30 @@ header .nav-bar .icon {
     display: none;
 }
 
-@media(max-width: 700px) {
-    .nav-bar a:not(:first-child) { /* Laisse l'accueil */
+@media(max-width: 900px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-bar {
+        position: relative;
+        width: 100%;
+        align-items: center;
+    }
+    .nav-bar a:not(:first-child) {
         display: none;
     }
-    .nav-bar a.icon { /* Affiche l'icon menu */
-        float: right;
+    .nav-bar a.icon {
         display: block;
     }
     .nav-bar.responsive {
-        position: relative;
         display: flex;
         flex-direction: column;
-    }
-    .nav-bar.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
     }
     .nav-bar.responsive a {
         float: none;
         display: block;
-        text-align: left;
         width: 80%;
     }
 }
