@@ -6,8 +6,9 @@
     <title>Objectif climat ! - À propos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/consequences.css">
     <script src="../js/common.js"></script>
+    <script src="../js/camembert.js" defer></script>
     <link rel="icon" href="../assets/ico/flatico.png" type="image/x-icon">
 </head>
 <body>
@@ -29,7 +30,16 @@
 </header>
 
 <main>
-
+    <div class="block full-width">
+        <h2>Les conséquences du changement climatique</h2>
+    </div>
+    <div class="block full-width" id="consequencesBlock">
+        <div id="consequencesPieBox">
+            <svg id="consequencesPie" width="350" height="350" viewBox="0 0 350 350"></svg>
+            <div id="consequencesLegend"></div>
+        </div>
+        <div id="consequenceDetail" class="block full-width">Survolez une conséquence pour voir le détail.</div>
+    </div>
 </main>
 
 <footer class="relative bottom">

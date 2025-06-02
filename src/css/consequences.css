@@ -1,0 +1,28 @@
+#consequencesPieBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#consequencesBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#consequencesPie {
+    display: block;
+}
+#consequencesLegend {
+    margin-top: 1em;
+    text-align: left;
+}
+#consequenceDetail {
+    margin-top: 2em;
+    transition: background 0.2s;
+}
+@media (max-width: 900px) {
+    #consequencesPieBox {
+        flex-direction: column;
+        align-items: center;
+    }
+    #consequencesPie { width: 95vw !important; height: auto !important; }
+}
