@@ -241,6 +241,12 @@ main {
     }
 }
 
+#welcome {
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    scroll-margin-top: 10vh;
+}
+
 
 footer {
     background-color: rgba(66, 66, 66, 0.5);

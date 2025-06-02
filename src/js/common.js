@@ -34,7 +34,7 @@ function responsiveHeaderNav() {
  * Fait scroller l'utilisateur jusqu'au niveau du content (sous la forme de la classe `.content`)
  */
 function scrollToContent(event) {
-    document.querySelector(".content").scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".content").scrollIntoView({ behavior: "smooth", block: "start", inline: "end" });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
