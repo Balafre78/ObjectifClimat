@@ -221,14 +221,14 @@ main {
     color: var(--ter-text-color)
 }
 
-#intro>img {
+#intro img {
     background-color: var(--green-bg-color);
     border-radius: 100%;
     transition: 0.3s ease-in-out;
     z-index: -1;
 }
 
-#intro>img:hover {
+#intro img:hover {
     transform: scale(1.2);
 }
 
@@ -237,21 +237,9 @@ main {
         height: auto;
     }
 
-    #intro>img {
+    #intro img {
         display: none;
     }
-}
-
-#log-on {
-    transition: 0.1s ease-in-out opacity;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
 }
 
 
