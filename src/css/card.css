@@ -9,7 +9,7 @@
 .container-reversable-card {
     min-width: 20vw;
     margin: 1vw;
-    height: 25vh;
+    height: max(75px,20vh);
     display: flex;
     flex-direction: column;
     transform-style: preserve-3d;
@@ -47,6 +47,10 @@
     position: absolute;
     backface-visibility: hidden;
     transition: opacity 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-front {
