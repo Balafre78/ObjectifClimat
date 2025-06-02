@@ -29,6 +29,14 @@ function responsiveHeaderNav() {
     }
 }
 
+
+/**
+ * Fait scroller l'utilisateur jusqu'au niveau du content (sous la forme de la classe `.content`)
+ */
+function scrollToContent() {
+    document.querySelector(".content").scrollIntoView({ behavior: "smooth" });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     /* Ajoute le bouton pour changer de switch le thème sur toutes les pages qui importent le script */
     const btn = document.createElement('button');
