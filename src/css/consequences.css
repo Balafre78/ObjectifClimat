@@ -24,5 +24,8 @@
         flex-direction: column;
         align-items: center;
     }
-    #consequencesPie { width: 95vw !important; height: auto !important; }
+    #consequencesPie {
+        width: 95vw !important;
+        height: auto !important;
+    }
 }

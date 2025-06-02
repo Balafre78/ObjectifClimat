@@ -68,14 +68,8 @@ form .category .content .question input[type="radio"] {
     margin-left: 0.5em;
 }
 
-/* .category .content .question > div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
-}*/
-
 form .buttons {
+    margin-top: 1em;
     width: 100%;
 }
 

@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .cards {
         border: 1px solid red;
         flex-direction: column;
@@ -51,7 +51,6 @@
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    background: var(--white-bg-color);
 }
 
 .card-front {

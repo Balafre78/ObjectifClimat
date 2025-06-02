@@ -1,33 +1,63 @@
 const consequencesData = [
     {
         label: "Fonte des glaces et montée des eaux",
-        value: 20,
-        color: "#4caf50",
+        value: 25,
+        color: "#2196f3",
         detail: "La hausse des températures provoque la fonte des glaciers et des calottes polaires, entraînant une élévation du niveau des mers et menaçant les zones côtières."
     },
     {
         label: "Événements météorologiques extrêmes",
         value: 20,
-        color: "#2196f3",
+        color: "#ff9800",
         detail: "Les vagues de chaleur, tempêtes, inondations et sécheresses deviennent plus fréquentes et plus intenses, impactant les populations et les écosystèmes."
     },
     {
         label: "Perte de biodiversité",
-        value: 20,
-        color: "#ff9800",
+        value: 15,
+        color: "#4caf50",
         detail: "De nombreuses espèces animales et végétales disparaissent ou migrent, perturbant les équilibres naturels et menaçant la sécurité alimentaire."
     },
     {
         label: "Impacts sur la santé humaine",
-        value: 20,
+        value: 10,
         color: "#e91e63",
         detail: "La pollution de l'air, la propagation de maladies et le stress thermique affectent la santé des populations, en particulier les plus vulnérables."
     },
     {
         label: "Conséquences économiques et sociales",
-        value: 20,
+        value: 10,
         color: "#9c27b0",
         detail: "Les catastrophes naturelles, la baisse des rendements agricoles et les migrations climatiques entraînent des coûts économiques et sociaux importants."
+    },
+    {
+        label: "Acidification des océans",
+        value: 8,
+        color: "#00bcd4",
+        detail: "L’augmentation du CO₂ dissous dans les océans modifie leur pH, menaçant la faune et la flore marines."
+    },
+    {
+        label: "Déplacement de populations",
+        value: 5,
+        color: "#795548",
+        detail: "Les catastrophes climatiques forcent des millions de personnes à quitter leur domicile."
+    },
+    {
+        label: "Diminution des ressources en eau",
+        value: 4,
+        color: "#8bc34a",
+        detail: "La sécheresse et la fonte des glaciers réduisent l’accès à l’eau potable."
+    },
+    {
+        label: "Dégradation des sols",
+        value: 2,
+        color: "#ffb600",
+        detail: "L’érosion et la désertification rendent les terres agricoles moins productives."
+    },
+    {
+        label: "Augmentation des incendies de forêt",
+        value: 1,
+        color: "#b92525",
+        detail: "Les sécheresses et la chaleur favorisent la multiplication des feux de forêt."
     }
 ];
 
