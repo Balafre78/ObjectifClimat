@@ -74,6 +74,7 @@ form .buttons {
 }
 
 form button {
+    color: var(--black-text-color);
     cursor: pointer;
     width: 20%;
 }
