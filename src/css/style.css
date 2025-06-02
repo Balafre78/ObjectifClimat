@@ -225,7 +225,6 @@ main {
     background-color: var(--green-bg-color);
     border-radius: 100%;
     transition: 0.3s ease-in-out;
-    z-index: -1;
 }
 
 #intro img:hover {
