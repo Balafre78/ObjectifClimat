@@ -1,3 +1,7 @@
+.solutions-table {
+    overflow-x: auto;
+}
+
 .solutions-table table {
     width: 100%;
     border-collapse: collapse;

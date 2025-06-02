@@ -44,12 +44,57 @@
              src="../assets/images/utils/arrow-down.svg" alt="Scroll Down" width="60" height="60">
     </div>
 
-
-    <div class="content">
+    <div id="welcome" class="content">
         <h2>Bienvenue sur notre site dédié à la lutte contre le changement climatique</h2>
         <p>Découvrez les causes, les conséquences et surtout comment agir à votre échelle.</p>
     </div>
 
+    <div class="cards">
+        <div class="container-reversable-card">
+            <div class="inner-reversable-card">
+                <div onclick="window.location='comprendre.html'" class="card block card-front">
+                    <h3>Comprendre</h3>
+                    <p>Les origines et les effets du changement climatique.</p>
+                </div>
+                <div onclick="window.location='comprendre.html'" class="card block card-back">
+                    <p>Explorez les causes, les mécanismes et les enjeux du réchauffement climatique. En savoir plus pour mieux agir !</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-reversable-card">
+            <div class="inner-reversable-card">
+                <div onclick="window.location='consequences.html'" class="card block card-front">
+                    <h3>Conséquences</h3>
+                    <p>Les impacts du changement climatique sur la planète et la société.</p>
+                </div>
+                <div onclick="window.location='consequences.html'" class="card block card-back">
+                    <p>Découvrez les effets concrets : fonte des glaces, événements extrêmes, biodiversité menacée…</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-reversable-card">
+            <div class="inner-reversable-card">
+                <div onclick="window.location='solutions.html'" class="card block card-front">
+                    <h3>Solutions</h3>
+                    <p>Des actions concrètes pour lutter contre le changement climatique.</p>
+                </div>
+                <div onclick="window.location='solutions.html'" class="card block card-back">
+                    <p>Adoptez des gestes simples, découvrez des initiatives et des solutions à tous les niveaux. Chaque geste compte, commencez dès aujourd’hui !</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-reversable-card">
+            <div class="inner-reversable-card">
+                <div onclick="window.location='calculateur.html'" class="card block card-front">
+                    <h3>Calculateur</h3>
+                    <p>Évaluez votre empreinte carbone personnelle.</p>
+                </div>
+                <div onclick="window.location='calculateur.html'" class="card block card-back">
+                    <p>Calculez vos émissions de CO₂ et obtenez des conseils personnalisés pour les réduire. Faites le test et devenez acteur du changement !</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="slides-container" id="slider1">
         <div class="slide fade">
@@ -70,57 +115,6 @@
 
         <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
         <a class="next" onclick="nextSlide(1)">&#10095;</a>
-    </div>
-
-    <div class="cards">
-        <div class="container-reversable-card">
-            <div class="inner-reversable-card">
-                <div onclick="window.location='comprendre.html'" class="card block card-front">
-                    <h3>Comprendre</h3>
-                    <p>Les origines et les effets du changement climatique.</p>
-                </div>
-                <div onclick="window.location='comprendre.html'" class="card block card-back">
-                    <h3>Back</h3>
-                    <p>Ceci est le derrière du site.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-reversable-card">
-            <div class="inner-reversable-card">
-                <div onclick="window.location='comprendre.html'" class="card block card-front">
-                    <h3>Agir</h3>
-                    <p>Des gestes simples pour un grand impact.</p>
-                </div>
-                <div onclick="window.location='comprendre.html'" class="card block card-back">
-                    <h3>Back</h3>
-                    <p>Ceci est le derrière du site.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-reversable-card">
-            <div class="inner-reversable-card">
-                <div onclick="window.location='comprendre.html'" class="card block card-front">
-                    <h3>Agir</h3>
-                    <p>Des gestes simples pour un grand impact.</p>
-                </div>
-                <div onclick="window.location='comprendre.html'" class="card block card-back">
-                    <h3>Back</h3>
-                    <p>Ceci est le derrière du site.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-reversable-card">
-            <div class="inner-reversable-card">
-                <div onclick="window.location='comprendre.html'" class="card block card-front">
-                    <h3>Agir</h3>
-                    <p>Des gestes simples pour un grand impact.</p>
-                </div>
-                <div onclick="window.location='comprendre.html'" class="card block card-back">
-                    <h3>Back</h3>
-                    <p>Ceci est le derrière du site.</p>
-                </div>
-            </div>
-        </div>
     </div>
 </main>
 

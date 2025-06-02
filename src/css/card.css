@@ -40,6 +40,7 @@
 
 .container-reversable-card:hover .inner-reversable-card{
     transform: rotateY(180deg);
+    cursor: pointer;
 }
 
 .container-reversable-card:hover .card-back{
