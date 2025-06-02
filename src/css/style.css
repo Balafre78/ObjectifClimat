@@ -229,6 +229,7 @@ main {
 
 #intro img:hover {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 @media(max-width: 900px) {
